@@ -14,11 +14,10 @@ def delta_phi(ticks: int, prev_ticks: int, resolution: int) -> Tuple[float, floa
         ticks: current number of ticks.
     """
 
-    # TODO: these are random values, you have to implement your own solution in here
     d_ticks = ticks - prev_ticks
     dphi = 2*np.pi*d_ticks/resolution
-    # ---
-    return dphi, ticks
+
+    return dphi, d_ticks
 
 
 def pose_estimation(
@@ -50,9 +49,14 @@ def pose_estimation(
         theta:              estimated heading
     """
 
-    # These are random values, replace with your own
-    x_curr = x_prev + 0
-    y_curr = y_prev + 0
-    theta_curr = theta_prev + 0
-    # ---
+    d_left = R*delta_phi_left       # distance travelled by left wheel in meters
+    d_right = R*delta_phi_right       # distance travelled by right wheel in meters
+
+    d_A = (d_left + d_right)/2
+    d_theta = (d_right - d_left)/baseline
+
+    theta_curr = theta_prev + d_theta
+    x_curr = x_prev + d_A*np.cos(theta_curr)
+    y_curr = y_prev + d_A*np.sin(theta_curr)
+
     return x_curr, y_curr, theta_curr
