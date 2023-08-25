@@ -12,7 +12,6 @@ def nothing(x):
 def main(fname: str = None):
     # Create a window
     cv2.namedWindow("image")
-
     frame0 = dcu.image_cv_from_jpg_fn(fname or sys.argv[1])
     lastL = np.array([171, 140, 0])
     lastU = np.array([179, 200, 255])
