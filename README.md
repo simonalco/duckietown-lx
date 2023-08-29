@@ -1,3 +1,11 @@
+<p>
+    NB : Ce repo contient tous les développements faits durant le stage à l'été 2023 par Simon Alphonse-Cormier. L'idéal pour y accéder est d'aller chercher le repo original et de fetch les développements sur ce git.
+    Dépot original : https://github.com/duckietown/duckietown-lx/tree/mooc2022
+    Dépôt de Simon : 
+</p>
+
+
+
 <p align="center">
 <img src="./braitenberg/assets/images/dtlogo.png" alt="Duckietown Logo" width="50%">
 </p>
