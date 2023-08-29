@@ -1,5 +1,5 @@
 <p>
-    NB : Ce dépôt contient tous les développements faits durant le stage à l'été 2023 par Simon Alphonse-Cormier. L'idéal pour y accéder est d'aller chercher le repo original et de fetch les développements sur ce git.
+    NB : Ce dépôt contient tous les développements faits durant le stage à l'été 2023 par Simon Alphonse-Cormier. L'idéal pour y accéder est d'aller chercher le dépôt original et de fetch les développements sur ce git.
     <br>
     Dépôt original : https://github.com/duckietown/duckietown-lx/tree/mooc2022
     <br>
